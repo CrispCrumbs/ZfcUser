@@ -29,6 +29,13 @@ class Module implements
         return include __DIR__ . '/config/module.config.php';
     }
 
+    /**
+     *  @TODO: The values contained in the methods below 
+     *  all belong in module.config.php
+     *  This will allow config to be cached, 
+     *  and additionally allow services to be swapped out via config
+     */
+
     public function getControllerPluginConfig()
     {
         return array(
